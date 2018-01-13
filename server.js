@@ -31,6 +31,9 @@ const csp = require('express-csp-header');
 const helmet = require('helmet');
 const history = require('connect-history-api-fallback');
 
+// pull in external routes
+const api = require('./routes/api');
+
 // init app
 const app = express();
 
