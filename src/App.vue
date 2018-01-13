@@ -1,23 +1,58 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div id="app" class="g">
+    <app-nav class="g-navbar"/>
+    <div class="g-alert">
+      <app-error/>
+      <app-loader/>
+    </div>
+    <router-view class="g-body"/>
+    <app-footer class="g-footer"/>
   </div>
 </template>
 
 <script>
+import Navbar from './components/AppNav.vue'
+import Footer from './components/AppFooter.vue'
+import Error from './components/common/Error.vue'
+import Loader from './components/common/Loader.vue'
 export default {
-  name: 'app'
-}
+  name: 'app',
+  components: {
+    'app-nav': Navbar,
+    'app-error': Error,
+    'app-loader': Loader,
+    'app-footer': Footer
+  },
+  data () {
+    return {};
+  }
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.g {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(1fr, 3);
+  grid-template-areas:
+    'nav nav nav'
+    'alert alert alert'
+    'body body body'
+    'footer footer footer';
 }
-</style>
+
+.g > .g-navbar {
+  grid-area: nav;
+}
+
+.g > .g-alert {
+  grid-area: alert;
+}
+
+.g > .g-body {
+  grid-area: body;
+}
+
+.g > .g-footer {
+  grid-area: footer;
+}</style>
