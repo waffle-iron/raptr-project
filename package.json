@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Luke Brown <lqb5393@psu.edu>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -14,9 +15,27 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.2",
+    "@fortawesome/fontawesome-free-brands": "^5.0.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.4",
+    "@fortawesome/vue-fontawesome": "0.0.22",
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-beta.3",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
+    "express-csp-header": "^2.1.0",
+    "helmet": "^3.9.0",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9",
+    "morgan": "^1.9.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vee-validate": "^2.0.2",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-simple-markdown": "^1.0.6",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
