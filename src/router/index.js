@@ -10,7 +10,7 @@ const router = new Router({
       path: '/',
       name: 'Dashboard',
       component: (resolve) => {
-        require(['@/components/Dashboard'], resolve);
+        require(['@/components/Dashboard'], resolve)
       }
     }
   ]

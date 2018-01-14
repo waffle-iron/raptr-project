@@ -8,23 +8,23 @@
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import { faHeart } from '@fortawesome/fontawesome-free-solid';
-import { faGitlab, faGithub } from '@fortawesome/fontawesome-free-brands';
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import { faHeart } from '@fortawesome/fontawesome-free-solid'
+import { faGitlab, faGithub } from '@fortawesome/fontawesome-free-brands'
 export default {
   components: {
     FontAwesomeIcon
   },
   computed: {
     heartIcon () {
-      return faHeart;
+      return faHeart
     },
     gitlabIcon () {
-      return faGitlab;
+      return faGitlab
     },
     githubIcon () {
-      return faGithub;
+      return faGithub
     }
   }
-};
+}
 </script>

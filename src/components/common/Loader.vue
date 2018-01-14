@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import { faSyncAlt, faCoffee } from '@fortawesome/fontawesome-free-solid';
+import { mapState } from 'vuex'
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import { faSyncAlt, faCoffee } from '@fortawesome/fontawesome-free-solid'
 export default {
   components: {
     FontAwesomeIcon
@@ -19,11 +19,11 @@ export default {
   computed: {
     ...mapState(['isLoading']),
     syncIcon () {
-      return faSyncAlt;
+      return faSyncAlt
     },
     coffeeIcon () {
-      return faCoffee;
+      return faCoffee
     }
   }
-};
+}
 </script>
