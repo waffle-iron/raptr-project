@@ -20,7 +20,7 @@
 *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 *  SOFTWARE.
 */
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const ChecklistSchema = new mongoose.Schema({
   isGoodRepair: {
@@ -39,7 +39,7 @@ const ChecklistSchema = new mongoose.Schema({
     type: Boolean,
     default: true
   }
-});
+})
 
 const LogSchema = new mongoose.Schema({
   createdAt: {
@@ -71,8 +71,8 @@ const LogSchema = new mongoose.Schema({
   signedOutBy: String,
   driver: String,
   routeNumber: String
-});
+})
 
-const Log = mongoose.model('log', LogSchema);
+const Log = mongoose.model('log', LogSchema)
 
-module.exports = Log;
+module.exports = Log

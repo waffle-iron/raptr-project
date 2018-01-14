@@ -1,5 +1,5 @@
 <template>
-  <div class="d-inline-flex">
+  <div class="d-flex justify-content-center">
     <div class="alert alert-danger text-center">
       <span><font-awesome-icon :icon="icon"></font-awesome-icon> error{{error}}</span>
     </div>

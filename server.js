@@ -62,7 +62,7 @@ app.use(serveStatic(__dirname + "/dist"));
 */
 
 // database URI
-const db_uri = process.env.MONGODB_URI
+const db_uri = process.env.MONGODB_URI || 'mongodb://localhost/raptr';
 
 // init db connection
 mongoose.connect(db_uri, { useMongoClient: true });
