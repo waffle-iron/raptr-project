@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
       <span class="navbar-brand mb-0 h1">
-        <img src="../assets/logo.png" id="brand-logo">
+        <img src="../assets/logo-white.png" id="brand-logo">
         RAPTR
       </span>
     </nav>
