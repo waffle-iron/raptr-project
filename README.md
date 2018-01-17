@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/Dynamic-Gravity/raptr-project.png?columns=all)](https://waffle.io/Dynamic-Gravity/raptr-project?utm_source=badge)
 # raptr
 
 > A Vue.js project
